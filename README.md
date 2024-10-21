@@ -1,4 +1,4 @@
-# Background Jobs MongoDB
+# Background BackgroundJobs MongoDB
 
 [![npm version](https://badge.fury.io/js/@universal-packages%2Fbackground-jobs-mongodb.svg)](https://www.npmjs.com/package/@universal-packages/background-jobs-mongodb)
 [![Testing](https://github.com/universal-packages/universal-background-jobs-mongodb/actions/workflows/testing.yml/badge.svg)](https://github.com/universal-packages/universal-background-jobs-mongodb/actions/workflows/testing.yml)
@@ -16,15 +16,15 @@ npm install @universal-packages/background-jobs
 
 ## MongoQueue
 
-Just pass this engine to the Jobs instance to enable it to use mongodb as the queue system.
+Just pass this engine to the BackgroundJobs instance to enable it to use mongodb as the queue system.
 
 ```js
-import { Jobs } from '@universal-packages/universal-background-jobs'
+import { BackgroundJobs } from '@universal-packages/universal-background-jobs'
 import { MongoQueue } from '@universal-packages/universal-background-jobs-mongodb'
 
-const jobs = new Jobs({ queue: 'mongodb', queueOptions: { url: 'mongodb://localhost:27017' } })
+const jobs = new BackgroundJobs({ queue: 'mongodb', queueOptions: { url: 'mongodb://localhost:27017' } })
 
-await jobs.prepare()
+await backgroundJobs.prepare()
 ```
 
 ### Options
